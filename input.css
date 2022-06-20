@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+input {
+  color: inherit;
+  color: #fff !important;
+}
+
+@layer base {
+  h1 {
+    @apply text-7xl font-bold mb-3;
+  }
+
+  h2 {
+    @apply text-5xl font-bold;
+  }
+}
+
+.portfolio-container {
+  @apply container mx-auto mt-8;
+}
+
+.skills-container {
+  @apply flex flex-col items-center;
+}
