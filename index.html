@@ -11,16 +11,30 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
-
+    z
+    <script src="./js/script.js" defer></script>
     <title>James - Portfolio</title>
   </head>
   <body>
     <header data-theme="synthwave">
-      <div class="container h-24 mx-auto flex justify-between items-center">
+      <div
+        class="container h-24 mx-auto flex justify-around lg:justify-between items-center"
+      >
         <div class="text-2xl font-bold">
           <a href="#">Jim Coder</a>
         </div>
-        <div class="uppercase">
+        <div class="relative">
+          <button
+            id="menu-btn"
+            class="block md:hidden focus:outline-none hamburger"
+          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+        </div>
+
+        <div class="hidden uppercase md:block">
           <a href="#about" class="yellow-btn mr-4" href="#">About</a>
           <a href="#portfolio" class="yellow-btn mr-4" href="#">Portfolio</a>
           <a href="#contact" class="yellow-btn" href="#">Contact</a>
@@ -29,23 +43,25 @@
     </header>
     <section>
       <div
-        class="portfolio-container flex flex-col justify-center space-y-8 min-h-screen"
+        class="p-4 portfolio-container flex flex-col justify-center space-y-8 md:min-h-screen"
       >
-        <div class="mb-40">
+        <div class="mb-20 md:mb-40 md:text-7xl">
           <h1 class="mb-6">Hello! 👨🏻‍💻 I'm James</h1>
           <h1>Frontend Developer</h1>
         </div>
 
-        <a href="#portfolio" class="btn btn-primary w-1/3">View Projects</a>
+        <a href="#portfolio" class="btn btn-primary w-full md:w-1/3"
+          >View Projects</a
+        >
       </div>
     </section>
     <section id="portfolio" data-theme="synthwave">
       <div class="portfolio-container py-20">
         <h2 class="mb-8">Portfolio</h2>
-        <div class="grid grid-cols-2">
+        <div class="grid md:grid-cols-2">
           <div class="flex flex-col">
             <h3 class="mb-2">Tic Tac Toe</h3>
-            <div class="flex flex-col">
+            <div class="flex flex-col items-center md:items-start">
               <img
                 class="w-3/4 mb-4 mr-4"
                 src="./images/TTT-Game-Play.png"
@@ -55,9 +71,9 @@
               <img class="w-3/4" src="/images/TTT-Starting-Screen.png" alt="" />
             </div>
           </div>
-          <div class="">
+          <div class="flex flex-col">
             <h3 class="mb-2">Github User App</h3>
-            <div class="flex flex-col">
+            <div class="flex flex-col items-center md:items-start">
               <img
                 class="w-3/4 mb-4 mr-4"
                 src="./images/Github-homescreen.png"
@@ -69,11 +85,6 @@
                 src="/images/Github-Screen-Result.png"
                 alt=""
               />
-              <img
-                class="w-3/4 mt-8"
-                src="/images/Github-Searchbar.png"
-                alt=""
-              />
             </div>
 
             <!-- <h3>Dine Website</h3>
@@ -83,7 +94,7 @@
         <div class="flex justify-center">
           <a
             href="https://www.google.com"
-            class="yellow-btn w-5/12 mt-8 text-4xl tracking-wide"
+            class="yellow-btn w-full md:w-5/12 mt-8 text-4xl tracking-wide"
             >View Full PORTFOLIO
           </a>
         </div>
@@ -141,47 +152,62 @@
     </section>
     <section id="about">
       <div class="portfolio-container">
-        <div class="pb-4">
-          <h2 class="text-5xl font-bold">About</h2>
-        </div>
-        <div class="max-w-xl space-y-4 leading-6">
-          <p>
-            Hi there, I currently live in South West England, open to hybrid
-            work within in this area. Open to relocation within the UK 🇬🇧
-            depening on the position or Remote work from around the world 🌍.
-          </p>
-          <p>
-            I have a passion for Tech ⌨️ long-held interest in computers 🖥. I
-            feel fortunate to always have the opportunity to learn every day.
-          </p>
-          <p>
-            After finishing University studying Applied Computing with and
-            emphasis on web development. I have focused on self learning Web and
-            Mobile development (iOS).
-          </p>
-          <p>
-            ♜ I enjoy chess, walking the coast line or in the hills 🥾
-            mindfulness 🧘🏻‍♂️ mindfullness, history 📜 and reading 📖
-          </p>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <div class="pb-4">
+              <h2 class="text-5xl font-bold">About</h2>
+            </div>
+            <div class="text-justify space-y-4 leading-6">
+              <p>
+                Hi there, I currently live in South West England, open to hybrid
+                work within in this area. Open to relocation within the UK 🇬🇧
+                depening on the position or Remote work from around the world
+                🌍.
+              </p>
+              <p>
+                I have a passion for Tech ⌨️ long-held interest in computers 🖥.
+                I feel fortunate to always have the opportunity to learn every
+                day.
+              </p>
+              <p>
+                After finishing University studying Applied Computing with and
+                emphasis on web development. I have focused on self learning Web
+                and Mobile development (iOS).
+              </p>
+              <p>
+                ♜ I enjoy chess, walking the coast line or in the hills 🥾 🧘🏻‍♂️
+                mindfullness, history 📜 and reading 📖
+              </p>
+            </div>
+          </div>
+          <div class="h-full flex justify-center items-center">
+            <img
+              class="w-1/2 h-1/2 rounded-xl shadow-xl"
+              src="./images/img.jpg"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </section>
 
     <section id="contact">
-      <div class="portfolio-container grid grid-cols-2">
-        <div class="flex flex-col items-center justify-center space-y-12">
+      <div class="portfolio-container grid md:grid-cols-2">
+        <div class="flex flex-col md:items-center justify-center md:space-y-12">
           <h2>Contact</h2>
-          <a href="#">
-            <i class="fab fa-github text-5xl"> </i>
-          </a>
-          <a href="#">
-            <i class="fab fa-twitter text-5xl"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-linkedin-in text-5xl"></i>
-          </a>
+          <div class="w-full flex justify-around lg:flex-col">
+            <a href="#">
+              <i class="fab fa-github text-5xl"> </i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter text-5xl"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-linkedin-in text-5xl"></i>
+            </a>
+          </div>
         </div>
-        <div class="mt-12">
+        <div class="mt-12 p-4">
           <form class="w-full max-w-lg">
             <div class="flex flex-wrap -mx-3 mb-6">
               <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -262,14 +288,19 @@
     </section>
     <footer id="footer" data-theme="synthwave" class="py-12 px-8 mt-8">
       <div class="flex items-center justify-center">
-        <i class="fas fa-code text-accent text-2xl mr-4"></i>
-        <p class="text-2xl font-semibold">
+        <div class="hidden md:block">
+          <i class="fas fa-code text-accent text-2xl mr-4"></i>
+        </div>
+
+        <p class="text-2xl font-semibold text-center">
           © 2022 - Built using
           <span class="text-secondary font-bold">Tailwind CSS</span> and
           <span class="text-secondary font-bold">daisy</span
           ><span class="text-primary font-bold">UI</span>
         </p>
-        <i class="fas fa-code text-accent text-2xl ml-4"></i>
+        <div class="hidden md:block">
+          <i class="fas fa-code text-accent text-2xl ml-4 hidden"></i>
+        </div>
       </div>
     </footer>
   </body>

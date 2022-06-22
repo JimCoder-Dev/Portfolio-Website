@@ -9,7 +9,7 @@ input {
 
 @layer base {
   h1 {
-    @apply text-7xl font-bold mb-3;
+    @apply text-4xl font-bold mb-3;
   }
 
   h2 {
@@ -17,7 +17,7 @@ input {
   }
 
   h3 {
-    @apply text-2xl font-bold;
+    @apply text-2xl font-bold underline mt-2;
   }
 }
 
@@ -26,9 +26,55 @@ input {
 }
 
 .portfolio-container {
-  @apply container mx-auto mt-8;
+  @apply container p-8 mx-auto mt-8;
 }
 
 .skills-container {
   @apply flex flex-col items-center;
+}
+
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 3px;
+  top: 0;
+  left: 0;
+  background: #fff;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+  background-color: #fff;
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+  background-color: #fff;
 }
