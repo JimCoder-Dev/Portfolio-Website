@@ -1,312 +1,213 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="corporate">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <script src="./js/script.js" defer></script>
-    <title>James - Portfolio</title>
-  </head>
-  <body>
-    <header data-theme="synthwave">
-      <div
-        class="container h-24 mx-auto flex justify-around lg:justify-between items-center"
-      >
-        <div class="text-2xl font-bold">
-          <a href="#">Jim Coder</a>
-        </div>
-        <div class="relative">
-          <button
-            id="menu-btn"
-            class="block md:hidden focus:outline-none hamburger"
-          >
-            <span class="hamburger-top"></span>
-            <span class="hamburger-middle"></span>
-            <span class="hamburger-bottom"></span>
-          </button>
-        </div>
 
-        <div class="hidden uppercase md:block">
-          <a href="#about" class="btn btn-accent hover:bg-white mr-4" href="#">About</a>
-          <a href="#portfolio" class="btn btn-accent hover:bg-white mr-4" href="#">Portfolio</a>
-          <a href="#contact" class="btn btn-accent hover:bg-white" href="#">Contact</a>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <script src="./js/script.js" defer></script>
+  <script src="https://kit.fontawesome.com/04a42e010d.js" crossorigin="anonymous"></script>
+  <title>James - Portfolio</title>
+</head>
+
+<body>
+  <header data-theme="synthwave">
+    <div class="container h-24 mx-auto flex justify-around items-center xl:justify-between">
+      <div class="text-2xl font-bold">
+        <a href="#">Jim Coder</a>
       </div>
-    </header>
-    <section>
-      <div
-        class="p-4 portfolio-container flex flex-col justify-center space-y-8 md:min-h-screen"
-      >
-        <div class="mb-20 md:mb-40 md:text-7xl">
-          <h1 class="mb-6">Hello! 👨🏻‍💻 I'm James</h1>
-          <h1>Frontend Developer</h1>
-        </div>
-
-        <a href="#portfolio" class="btn btn-primary w-full md:w-1/3"
-          >View Projects</a
-        >
+      <div class="relative">
+        <button id="menu-btn" class="block md:hidden focus:outline-none hamburger">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
       </div>
-    </section>
-    <section id="portfolio" data-theme="synthwave">
-      <div class="portfolio-container py-20">
-        <h2 class="mb-8">Portfolio</h2>
-        <div class="grid md:grid-cols-2">
-          <div class="flex flex-col">
-            <h3 class="mb-2">
-              <a target="_blank" href="https://github.com/JimCoder-Dev/Tic-tac-toe">Tic Tac Toe</a>
-              
-            </h3>
-            <div class="flex flex-col items-center md:items-start">
-              <img
-                class="w-3/4 mb-4 mr-4"
-                src="./images/TTT-Game-Play.png"
-                alt=""
-              />
 
-              <img class="w-3/4" src="/images/TTT-Starting-Screen.png" alt="" />
-            </div>
+      <div class="hidden uppercase md:block">
+        <a href="#about" class="btn btn-accent hover:bg-white mr-4" href="#">About</a>
+        <a href="#portfolio" class="btn btn-accent hover:bg-white mr-4" href="#">Portfolio</a>
+        <a href="#contact" class="btn btn-accent hover:bg-white" href="#">Contact</a>
+      </div>
+    </div>
+  </header>
+  <section>
+    <div class="p-4 portfolio-container flex flex-col justify-center space-y-8 md:min-h-screen">
+      <div class="mb-20 md:mb-40 md:text-7xl">
+        <h1 class="mb-6 xl:text-8xl">Hello! 👨🏻‍💻 I'm James</h1>
+        <h1 class="xl:text-8xl">Frontend Developer</h1>
+      </div>
+
+      <a href="#portfolio" class="btn btn-primary w-full md:w-1/3">View Projects</a>
+    </div>
+  </section>
+  <section id="portfolio" data-theme="synthwave">
+    <div class="portfolio-container py-20">
+      <h2 class="mb-8">Portfolio</h2>
+      <div class="grid md:grid-cols-2">
+        <div class="flex flex-col">
+          <h3 class="mb-2">
+            <a target="_blank" href="https://github.com/JimCoder-Dev/Tic-tac-toe">Tic Tac Toe</a>
+
+          </h3>
+          <div class="flex flex-col items-center md:items-start">
+            <img class="max-h-96 mb-8" src="./images/TTT-Game-Play.png" alt="" />
+
+            <img class="max-h-96 mb-4" src="/images/TTT-Starting-Screen.png" alt="" />
           </div>
-          <div class="flex flex-col">
-            <h3 class="mb-2">
-              <a target="_blank" href="https://github.com/JimCoder-Dev/github-user-search-app">Github User App</a>
-              
-            </h3>
-            <div class="flex flex-col items-center md:items-start">
-              <img
-                class="w-3/4 mb-4 mr-4"
-                src="./images/Github-homescreen.png"
-                alt=""
-              />
+        </div>
+        <div class="flex flex-col">
+          <h3 class="mb-2">
+            <a target="_blank" href="https://github.com/JimCoder-Dev/github-user-search-app">Github User App</a>
 
-              <img
-                class="w-3/4"
-                src="/images/Github-Screen-Result.png"
-                alt=""
-              />
-            </div>
+          </h3>
+          <div class="flex flex-col items-center md:items-start">
+            <img class="max-h-96 mb-8 mr-4" src="./images/Github-homescreen.png" alt="" />
 
-            <!-- <h3>Dine Website</h3>
+            <img class="max-h-96 mb-4" src="/images/Github-Screen-Result.png" alt="" />
+          </div>
+
+          <!-- <h3>Dine Website</h3>
             <img class="w-3/4" src="/images/Dine-Mobile-Site.png" alt="" /> -->
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <!-- <a
+            href="https://www.google.com"
+            class="btn btn-accent w-full md:w-5/12 mt-8 text-4xl tracking-wide"
+            >View Full PORTFOLIO
+          </a> -->
+      </div>
+    </div>
+  </section>
+  <section id="skills">
+    <div class="portfolio-container">
+      <h2 class="mb-6">Skills</h2>
+      <div class="grid grid-cols-3 gap-8 md:grid-cols-4">
+        <div class="flex flex-col items-center">
+          <i class="fab fa-html5 text-accent text-7xl"></i>
+          <p class="text-neutral font-semibold">HTML</p>
+        </div>
+        <div class="flex flex-col items-center mb-4">
+          <i class="fab fa-css3-alt text-accent text-7xl"></i>
+          <p class="text-neutral font-semibold">CSS3</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <i class="fab fa-js fa-html5 text-accent text-7xl"></i>
+          <p class="text-neutral font-semibold">JavaScript</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <i class="fab fa-sass text-accent text-7xl"></i>
+          <p class="text-neutral font-semibold">SASS</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <i class="fab fa-react fa-html5 text-accent text-7xl"></i>
+          <p class="text-neutral font-semibold">REACT</p>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <div class="w-20 sm:w-26 h-16 mb-1">
+            <svg viewBox="0 0 128 128">
+              <path class="text-accent text-mid transition-all duration-200 ease-in-out fill-current"
+                d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.867 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.867 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64zm0 0"
+                fill="#38b2ac"></path>
+            </svg>
+          </div>
+          <p class="text-neutral font-semibold">Tailwind</p>
+        </div>
+
+        <div class="skills-container">
+          <i class="fab fa-apple text-accent text-7xl"></i>
+          <p class="text-neutral font-semibold">SwiftUI</p>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <i class="fab fa-git-square text-accent text-6xl"></i>
+          <p class="text-neutral text-center font-semibold">Version Control</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="portfolio-container">
+      <div class="grid md:grid-cols-2 gap-4">
+        <div>
+          <div class="pb-4">
+            <h2 class="text-5xl font-bold">About</h2>
+          </div>
+          <div class="text-justify space-y-4 leading-6">
+            <p>
+              Hi there, I currently live in South West England, open to hybrid
+              work within in this area. Open to relocation within the UK 🇬🇧
+              depening on the position or Remote work from around the world
+              🌍.
+            </p>
+            <p>
+              I have a passion for Tech ⌨️ long-held interest in computers 🖥.
+              I feel fortunate to always have the opportunity to learn every
+              day.
+            </p>
+            <p>
+              After finishing University studying Applied Computing with and
+              emphasis on web development. I have focused on self learning Web
+              and Mobile development (iOS).
+            </p>
+            <p>
+              ♜ I enjoy chess, walking the coast line or in the hills 🥾 🧘🏻‍♂️
+              mindfullness, history 📜 and reading 📖
+            </p>
           </div>
         </div>
-        <div class="flex justify-center">
-          <a
-            href="https://www.google.com"
-            class="yellow-btn w-full md:w-5/12 mt-8 text-4xl tracking-wide"
-            >View Full PORTFOLIO
+        <div class="h-full flex justify-center items-center">
+          <img class="max-w-xs rounded-xl shadow-xl brightness-75 contrast-150" src="./images/img.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="portfolio-container ">
+      <div class="flex flex-col lg:w-3/4  space-y-12">
+        <h2>Contact</h2>
+        <div class="w-full flex justify-around">
+          <a href="https://github.com/JimCoder-Dev">
+            <i class="fab fa-github text-5xl"> </i>
+          </a>
+          <a href="https://twitter.com">
+            <i class="fab fa-twitter text-5xl"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/james-h-923517226/">
+            <i class="fab fa-linkedin-in text-5xl"></i>
           </a>
         </div>
-      </div>
-    </section>
-    <section id="skills">
-      <div class="portfolio-container">
-        <h2 class="mb-6">Skills</h2>
-        <div class="grid grid-cols-4">
-          <div class="flex flex-col items-center">
-            <i class="fab fa-html5 text-accent text-7xl"></i>
-            <p class="text-neutral font-semibold">HTML</p>
-          </div>
-          <div class="flex flex-col items-center mb-4">
-            <i class="fab fa-css3-alt text-accent text-7xl"></i>
-            <p class="text-neutral font-semibold">CSS3</p>
-          </div>
-          <div class="flex flex-col items-center">
-            <i class="fab fa-js fa-html5 text-accent text-7xl"></i>
-            <p class="text-neutral font-semibold">JavaScript</p>
-          </div>
-          <div class="flex flex-col items-center">
-            <i class="fab fa-sass text-accent text-7xl"></i>
-            <p class="text-neutral font-semibold">SASS</p>
-          </div>
-          <div class="flex flex-col items-center">
-            <i class="fab fa-react fa-html5 text-accent text-7xl"></i>
-            <p class="text-neutral font-semibold">REACT</p>
-          </div>
-
-          <div class="flex flex-col items-center">
-            <div class="w-20 sm:w-26 h-16 mb-1">
-              <svg viewBox="0 0 128 128">
-                <path
-                  class="text-accent text-mid transition-all duration-200 ease-in-out fill-current"
-                  d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.867 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.867 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64zm0 0"
-                  fill="#38b2ac"
-                ></path>
-              </svg>
-            </div>
-            <p class="text-neutral font-semibold">Tailwind</p>
-          </div>
-
-          <div class="skills-container">
-            <i class="fab fa-apple text-accent text-7xl"></i>
-            <p class="text-neutral font-semibold">SwiftUI</p>
-          </div>
-
-          <div class="flex flex-col items-center">
-            <i class="fab fa-git-square text-accent text-6xl"></i>
-            <p class="text-neutral font-semibold">Version Control</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <div class="portfolio-container">
-        <div class="grid grid-cols-2 gap-4">
-          <div>
-            <div class="pb-4">
-              <h2 class="text-5xl font-bold">About</h2>
-            </div>
-            <div class="text-justify space-y-4 leading-6">
-              <p>
-                Hi there, I currently live in South West England, open to hybrid
-                work within in this area. Open to relocation within the UK 🇬🇧
-                depening on the position or Remote work from around the world
-                🌍.
-              </p>
-              <p>
-                I have a passion for Tech ⌨️ long-held interest in computers 🖥.
-                I feel fortunate to always have the opportunity to learn every
-                day.
-              </p>
-              <p>
-                After finishing University studying Applied Computing with and
-                emphasis on web development. I have focused on self learning Web
-                and Mobile development (iOS).
-              </p>
-              <p>
-                ♜ I enjoy chess, walking the coast line or in the hills 🥾 🧘🏻‍♂️
-                mindfullness, history 📜 and reading 📖
-              </p>
-            </div>
-          </div>
-          <div class="h-full flex justify-center items-center">
-            <img
-              class="w-1/2 h-1/2 rounded-xl shadow-xl"
-              src="./images/img.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="portfolio-container grid md:grid-cols-2">
-        <div class="flex flex-col md:items-center justify-center md:space-y-12">
-          <h2>Contact</h2>
-          <div class="w-full flex justify-around lg:flex-col">
-            <a href="#">
-              <i class="fab fa-github text-5xl"> </i>
-            </a>
-            <a href="#">
-              <i class="fab fa-twitter text-5xl"></i>
-            </a>
-            <a href="#">
-              <i class="fab fa-linkedin-in text-5xl"></i>
-            </a>
-          </div>
-        </div>
-        <div class="mt-12 p-4">
-          <form class="w-full max-w-lg">
-            <div class="flex flex-wrap -mx-3 mb-6">
-              <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                <label
-                  class="block uppercase tracking-wide text-xs font-bold mb-2"
-                  for="grid-first-name"
-                >
-                  First Name
-                </label>
-                <input
-                  class="appearance-none block w-full border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-                  id="grid-first-name"
-                  type="text"
-                  placeholder="First name"
-                />
-                <p class="hidden text-red-500 text-xs italic">
-                  Please fill out this field.
-                </p>
-              </div>
-              <div class="w-full md:w-1/2 px-3">
-                <label
-                  class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                  for="grid-last-name"
-                >
-                  Last Name
-                </label>
-                <input
-                  class="appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                  id="grid-last-name"
-                  type="text"
-                  placeholder="Last Name"
-                />
-              </div>
-            </div>
-            <div class="flex flex-wrap -mx-3 mb-6">
-              <div class="w-full px-3">
-                <label
-                  class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                  for="grid-password"
-                >
-                  E-mail
-                </label>
-                <input
-                  class="appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                  id="email"
-                  type="email"
-                />
-              </div>
-            </div>
-            <div class="flex flex-wrap -mx-3 mb-6">
-              <div class="w-full px-3">
-                <label
-                  class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                  for="grid-password"
-                >
-                  Message
-                </label>
-                <textarea
-                  class="no-resize appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
-                  id="message"
-                ></textarea>
-              </div>
-            </div>
-            <div class="md:flex md:items-center">
-              <div class="md:w-1/3">
-                <button
-                  class="shadow bg-secondary hover:bg-accent focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
-                  type="button"
-                >
-                  Send
-                </button>
-              </div>
-              <div class="md:w-2/3"></div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
-    <footer id="footer" data-theme="synthwave" class="py-12 px-8 mt-8">
-      <div class="flex items-center justify-center">
-        <div class="hidden md:block">
-          <i class="fas fa-code text-accent text-2xl mr-4"></i>
+        <div class="pt-10 md:pt-20 flex justify-center">
+          <a class="btn w-1/2" href="mailto:jimcoderdev@gmail.comk">Get In Touch</a>
         </div>
 
-        <p class="text-2xl font-semibold text-center">
-          © 2022 - Built using
-          <span class="text-secondary font-bold">Tailwind CSS</span> and
-          <span class="text-secondary font-bold">daisy</span
-          ><span class="text-primary font-bold">UI</span>
-        </p>
-        <div class="hidden md:block">
-          <i class="fas fa-code text-accent text-2xl ml-4 hidden"></i>
-        </div>
       </div>
-    </footer>
-  </body>
+
+    </div>
+  </section>
+  <footer id="footer" data-theme="synthwave" class="py-12 px-8 mt-8">
+    <div class="flex items-center justify-center">
+      <div class="hidden md:block">
+        <i class="fas fa-code text-accent text-2xl mr-4"></i>
+      </div>
+
+      <p class="text-2xl font-semibold text-center">
+        © 2022 - Built using
+        <span class="text-secondary font-bold">Tailwind CSS</span> and
+        <span class="text-secondary font-bold">daisy</span><span class="text-primary font-bold">UI</span>
+      </p>
+      <div class="hidden md:block">
+        <i class="fas fa-code text-accent text-2xl ml-4 hidden"></i>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
