@@ -38,7 +38,7 @@
   <section>
     <div class="p-4 portfolio-container flex flex-col justify-center space-y-8 md:min-h-screen">
       <div class="mb-20 md:mb-40 md:text-7xl">
-        <h1 class="mb-6 xl:text-8xl">Hello! 👨🏻‍💻 I'm James</h1>
+        <h1 class="mb-6 ">Hello! 👨🏻‍💻 I'm James</h1>
         <h1 class="xl:text-8xl">Frontend Developer</h1>
       </div>
 
@@ -46,33 +46,54 @@
     </div>
   </section>
   <section id="portfolio" data-theme="synthwave">
-    <div class="portfolio-container py-20">
+    <div class="portfolio-container">
       <h2 class="mb-8">Portfolio</h2>
-      <div class="grid md:grid-cols-2">
-        <div class="flex flex-col">
-          <h3 class="mb-2">
-            <a target="_blank" href="https://github.com/JimCoder-Dev/Tic-tac-toe">Tic Tac Toe</a>
+      <div class="grid md:grid-cols-2 gap-14">
+        <div class="flex flex-col items-center bg-white rounded-lg  py-12">
+          <img class="max-w-screen-sm px-8" src="./images/TTT-Game-Play.png" alt="" />
 
-          </h3>
-          <div class="flex flex-col items-center md:items-start">
-            <img class="max-h-96 mb-8" src="./images/TTT-Game-Play.png" alt="" />
-
-            <img class="max-h-96 mb-4" src="/images/TTT-Starting-Screen.png" alt="" />
+          <div class="w-full pl-12 text-black">
+            <h3 class="mt-10">Tic Tac Toe Game</h3>
+            <p class="py-4"><span class="lang-icons">HTML</span><span class="lang-icons">CSS</span><span
+                class="lang-icons">JS</span></p>
+            <p class="pr-12 text-justify">Built with JavaScript the player has the oppertunity to choose there mark to
+              play with.
+              Then
+              whether they
+              want to play against anoter player or against the computer. The computer taking a time out between moves
+              so there moves don't show up instantly. There are score for all three endings for the game and reset
+              button to clear the board where all scores are reset back to zero.</p>
+            <a href="#" class="mt-8 btn btn-info text-white px-10 hover:bg-blue-900 hover:border-0">View Live Site</a>
           </div>
+
+
+
         </div>
+
         <div class="flex flex-col">
-          <h3 class="mb-2">
-            <a target="_blank" href="https://github.com/JimCoder-Dev/github-user-search-app">Github User App</a>
 
-          </h3>
-          <div class="flex flex-col items-center md:items-start">
-            <img class="max-h-96 mb-8 mr-4" src="./images/Github-homescreen.png" alt="" />
+          <div class="flex flex-col items-center bg-white rounded-lg py-12">
 
-            <img class="max-h-96 mb-4" src="/images/Github-Screen-Result.png" alt="" />
+            <img class="max-w-screen-sm" src="/images/Github-Screen-Result.png" alt="" />
+            <img class="max-w-screen-sm mt-8" src="./images/Github-Searchbar.png" />
+            <div class="text-black w-full pl-12"">
+              <h3 class=" mt-10">Git Hub Finder</h3>
+              <p class=" py-4"><span class="lang-icons">REACT</span>Tailwind<span class="lang-icons"></span> </p>
+              <p class="pr-12 text-justify">
+                Using REACT context to share between components, use reducers implemented for the error message to
+                trigger showing then disapearing after a short timeout.
+                The button click that activates dark mode on a state boolean component will determine whether light mode
+                and dark mode styling is implemented. This was my first experience of dyanmic styling using REACT. I
+                think this could be refactored to avoid repetition in the way css is passed in rathering than styling
+                each component.
+              </p>
+              <a href="#" class="mt-8 btn btn-info text-white px-10 hover:bg-blue-900 hover:border-0">View Live Site</a>
+            </div>
+
           </div>
 
           <!-- <h3>Dine Website</h3>
-            <img class="w-3/4" src="/images/Dine-Mobile-Site.png" alt="" /> -->
+            <img class=" w-3/4" src="/images/Dine-Mobile-Site.png" alt="" /> -->
         </div>
       </div>
       <div class="flex justify-center">
@@ -88,28 +109,28 @@
     <div class="portfolio-container">
       <h2 class="mb-6">Skills</h2>
       <div class="grid grid-cols-3 gap-8 md:grid-cols-4">
-        <div class="flex flex-col items-center">
+        <div class="skills-row">
           <i class="fab fa-html5 text-accent text-7xl"></i>
-          <p class="text-neutral font-semibold">HTML</p>
+          <p class="skills-text">HTML</p>
         </div>
-        <div class="flex flex-col items-center mb-4">
+        <div class="skills-row">
           <i class="fab fa-css3-alt text-accent text-7xl"></i>
-          <p class="text-neutral font-semibold">CSS3</p>
+          <p class="skills-text">CSS3</p>
         </div>
-        <div class="flex flex-col items-center">
+        <div class="skills-row">
           <i class="fab fa-js fa-html5 text-accent text-7xl"></i>
-          <p class="text-neutral font-semibold">JavaScript</p>
+          <p class="skills-text">JavaScript</p>
         </div>
-        <div class="flex flex-col items-center">
+        <div class="skills-row">
           <i class="fab fa-sass text-accent text-7xl"></i>
-          <p class="text-neutral font-semibold">SASS</p>
+          <p class="skills-text">SASS</p>
         </div>
-        <div class="flex flex-col items-center">
+        <div class="skills-row">
           <i class="fab fa-react fa-html5 text-accent text-7xl"></i>
-          <p class="text-neutral font-semibold">REACT</p>
+          <p class="skills-text">REACT</p>
         </div>
 
-        <div class="flex flex-col items-center">
+        <div class="skills-row">
           <div class="w-20 sm:w-26 h-16 mb-1">
             <svg viewBox="0 0 128 128">
               <path class="text-accent text-mid transition-all duration-200 ease-in-out fill-current"
@@ -117,17 +138,17 @@
                 fill="#38b2ac"></path>
             </svg>
           </div>
-          <p class="text-neutral font-semibold">Tailwind</p>
+          <p class="skills-text">Tailwind</p>
         </div>
 
-        <div class="skills-container">
+        <div class="skills-row">
           <i class="fab fa-apple text-accent text-7xl"></i>
-          <p class="text-neutral font-semibold">SwiftUI</p>
+          <p class="skills-text">SwiftUI</p>
         </div>
 
-        <div class="flex flex-col items-center">
+        <div class="skills-row">
           <i class="fab fa-git-square text-accent text-6xl"></i>
-          <p class="text-neutral text-center font-semibold">Version Control</p>
+          <p class="skills-text">Version Control</p>
         </div>
       </div>
     </div>
@@ -157,8 +178,8 @@
               and Mobile development (iOS).
             </p>
             <p>
-              ♜ I enjoy chess, walking the coast line or in the hills 🥾 🧘🏻‍♂️
-              mindfullness, history 📜 and reading 📖 🚗
+              ♜ I enjoy chess, walking the coastline or in the hills 🥾 🧘🏻‍♂️
+              mindfullness, history 📜 reading 📖 and collecting🚗
             </p>
           </div>
         </div>
@@ -171,21 +192,21 @@
 
   <section id="contact">
     <div class="portfolio-container ">
-      <div class="flex flex-col lg:w-3/4  space-y-12">
+      <div class="flex flex-col space-y-12">
         <h2>Contact</h2>
         <div class="w-full flex justify-around">
           <a href="https://github.com/JimCoder-Dev">
-            <i class="fab fa-github text-5xl"> </i>
+            <i class="mt-2 fab fa-github text-5xl hover:text-accent"> </i>
           </a>
           <a href="https://twitter.com">
-            <i class="fab fa-twitter text-5xl"></i>
+            <i class="fab fa-twitter text-5xl hover:text-accent"></i>
           </a>
           <a href="https://www.linkedin.com/in/james-h-923517226/">
-            <i class="fab fa-linkedin-in text-5xl"></i>
+            <i class="fab fa-linkedin-in text-5xl hover:text-accent"></i>
           </a>
         </div>
-        <div class="pt-10 md:pt-20 flex justify-center">
-          <a class="btn w-1/2" href="mailto:jimcoderdev@gmail.comk">Get In Touch</a>
+        <div class="pt-10 md:pt-20 flex justify-center hover:text-accent">
+          <a class="btn w-1/2 hover:bg-accent hover:border-0" href="mailto:jimcoderdev@gmail.comk">Get In Touch</a>
         </div>
 
       </div>

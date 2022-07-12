@@ -9,7 +9,7 @@ input {
 
 @layer base {
   h1 {
-    @apply text-4xl font-bold mb-3;
+    @apply text-4xl font-bold mb-3 md:text-6xl  lg:text-8xl;
   }
 
   h2 {
@@ -17,16 +17,24 @@ input {
   }
 
   h3 {
-    @apply text-2xl font-bold underline mt-2;
+    @apply text-2xl font-bold mt-2 uppercase;
   }
 }
 
 .portfolio-container {
-  @apply container p-8 mx-auto mt-8;
+  @apply p-20 mx-auto mt-8;
 }
 
-.skills-container {
-  @apply flex flex-col items-center;
+.lang-icons{
+  @apply mr-3 font-semibold;
+}
+
+.skills-row{
+  @apply flex flex-col items-center hover:scale-125 cursor-pointer;
+}
+
+.skills-text{
+  @apply mt-2 text-accent font-bold;
 }
 
 .hamburger {
