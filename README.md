@@ -5,5 +5,6 @@
 
 **To Do** 
 1. Mobile menu on click
+2. Further projects
 
 ![Memoji James Waving](./images/wave.jpg "Memoji waving hello")
