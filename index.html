@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="corporate">
+<html lang="en" data-theme="emerald">
 
 <head>
   <meta charset="UTF-8" />
@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <header data-theme="synthwave">
+  <header data-theme="aqua">
     <div class="container h-24 mx-auto flex justify-around items-center xl:justify-between">
       <div class="text-2xl font-bold">
         <a href="#">Jim Coder</a>
@@ -29,9 +29,9 @@
       </div>
 
       <div class="hidden uppercase md:block">
-        <a href="#about" class="btn btn-accent hover:bg-white mr-4" href="#">About</a>
-        <a href="#portfolio" class="btn btn-accent hover:bg-white mr-4" href="#">Portfolio</a>
-        <a href="#contact" class="btn btn-accent hover:bg-white" href="#">Contact</a>
+        <a href="#about" class="btn btn-primary hover:bg-white hover:border-0 mr-4" href="#">About</a>
+        <a href="#portfolio" class="btn btn-primary hover:bg-white hover:border-0 mr-4" href="#">Portfolio</a>
+        <a href="#contact" class="btn btn-primary hover:bg-white hover:bottom-0" href="#">Contact</a>
       </div>
     </div>
   </header>
@@ -45,7 +45,7 @@
       <a href="#portfolio" class="btn btn-primary w-full md:w-1/3">View Projects</a>
     </div>
   </section>
-  <section id="portfolio" data-theme="synthwave">
+  <section id="portfolio" data-theme="aqua">
     <div class="portfolio-container">
       <h2 class="mb-8">Portfolio</h2>
       <div class="grid md:grid-cols-2 gap-14">
@@ -87,14 +87,91 @@
                 think this could be refactored to avoid repetition in the way css is passed in rathering than styling
                 each component.
               </p>
-              <a href="#" class="mt-8 btn btn-info text-white px-10 hover:bg-blue-900 hover:border-0">View Live Site</a>
+              <div class="card-actions justify-end mr-8">
+                <a href="#" class="mt-8 btn btn-info text-white px-10 hover:bg-blue-900 hover:border-0">View Live
+                  Site</a>
+              </div>
+
             </div>
 
           </div>
 
           <!-- <h3>Dine Website</h3>
-            <img class=" w-3/4" src="/images/Dine-Mobile-Site.png" alt="" /> -->
+            <img class=" w-3/4" src="" alt="" /> -->
         </div>
+        <div class="card text-black bg-white shadow-xl">
+          <figure><img src="/images/Dine-Mobile-Site.jpeg" alt="Dine site on mobile" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">
+              Dine
+
+            </h2>
+            <div class="flex">
+              <div class="badge badge-primary">HTML</div>
+              <div class="badge badge-secondary">CSS</div>
+
+
+              <div class="badge badge-accent">JS</div>
+              <div class="badge badge-neutral">Tailwind</div>
+              <div class="badge badge-outline">DaisyUI</div>
+              <div class="badge badge-outline">API</div>
+            </div>
+            <div>
+              <div class="badge badge-info gap-2">
+
+                info
+              </div>
+              <div class="badge badge-success font-semibold gap-2">
+
+                Tailwind
+              </div>
+              <div class="badge badge-warning gap-2">
+
+                warning
+              </div>
+              <div class="badge badge-error font-semibold gap-2">
+
+                Project Still In Progress
+              </div>
+            </div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, beatae velit adipisci, fuga vel ea
+              blanditiis ad necessitatibus officia obcaecati maiores illo recusandae accusantium nostrum quis nam libero
+              dolor quo!</p>
+            <div class="card-actions justify-end">
+
+              <a href="#" class="mt-8 btn btn-info text-white px-10 hover:bg-blue-900 hover:border-0">View Live Site</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card text-black bg-white shadow-xl">
+          <figure><img src="/images/All-Coins.jpeg" Dine site on mobile" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">
+              Coin Gecko Api App
+
+            </h2>
+            <div class="flex">
+              <div class="badge badge-primary">HTML</div>
+              <div class="badge badge-secondary">CSS</div>
+
+
+            </div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, beatae velit adipisci, fuga vel ea
+              blanditiis ad necessitatibus officia obcaecati maiores illo recusandae accusantium nostrum quis nam libero
+              dolor quo!
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, at vero perspiciatis, voluptatem
+              dolore cupiditate corrupti optio, iure ab porro rerum libero labore rem nesciunt? Molestiae perspiciatis
+              saepe voluptates nesciunt.
+            </p>
+            <div class="card-actions justify-end">
+
+              <a href="#" class="mt-8 btn btn-info text-white px-10 hover:bg-blue-900 hover:border-0">View Live Site</a>
+            </div>
+          </div>
+        </div>
+
+
       </div>
       <div class="flex justify-center">
         <!-- <a
@@ -189,7 +266,6 @@
       </div>
     </div>
   </section>
-
   <section id="contact">
     <div class="portfolio-container ">
       <div class="flex flex-col space-y-12">
@@ -208,12 +284,10 @@
         <div class="pt-10 md:pt-20 flex justify-center hover:text-accent">
           <a class="btn w-1/2 hover:bg-accent hover:border-0" href="mailto:jimcoderdev@gmail.comk">Get In Touch</a>
         </div>
-
       </div>
-
     </div>
   </section>
-  <footer id="footer" data-theme="synthwave" class="py-12 px-8 mt-8">
+  <footer id="footer" data-theme="aqua" class="py-12 px-8 mt-8">
     <div class="flex items-center justify-center">
       <div class="hidden md:block">
         <i class="fas fa-code text-accent text-2xl mr-4"></i>
@@ -221,7 +295,7 @@
 
       <p class="text-2xl font-semibold text-center">
         © 2022 - Built using
-        <span class="text-secondary font-bold">Tailwind CSS</span> and
+        <span class="text-primary font-bold">Tailwind CSS</span> and
         <span class="text-secondary font-bold">daisy</span><span class="text-primary font-bold">UI</span>
       </p>
       <div class="hidden md:block">
