@@ -25,9 +25,6 @@ input {
   @apply p-20 mx-auto mt-8;
 }
 
-.lang-icons{
-  @apply mr-3 font-semibold;
-}
  
 .skills-row{
   @apply flex flex-col items-center hover:scale-125 cursor-pointer;
