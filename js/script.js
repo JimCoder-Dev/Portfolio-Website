@@ -1,3 +1,7 @@
+const year = document.getElementById('year')
+const date = new Date()
+year.innerHTML = date.getFullYear()
+
 const btn = document.getElementById('menu-btn');
 //HAMBURGER BUTTON
 btn.addEventListener('click', navToggle);
