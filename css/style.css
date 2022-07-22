@@ -2621,10 +2621,6 @@ h3 {
   max-width: 20rem;
 }
 
-.max-w-screen-md {
-  max-width: 768px;
-}
-
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
